@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="10" prefWidth="320" xmlns:fx="http://javafx.com/fxml" fx:controller="com.rodasoft.recursos.humanos.controlller.RegistroController">
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+    <Label text="Registro de usuario"/>
+    <Label text="Usuario"/>
+    <TextField fx:id="txtUsuario"/>
+    <Label text="Contraseña"/>
+    <PasswordField fx:id="txtContrasena"/>
+    <Label text="Confirmar contraseña"/>
+    <PasswordField fx:id="txtConfirmacion"/>
+    <Label text="Rol"/>
+    <ComboBox fx:id="cmbRol" prefWidth="280"/>
+    <Button text="Registrarse" onAction="#onRegistrar"/>
+    <Button text="Volver" onAction="#onVolver"/>
+</VBox>
